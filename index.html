@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuriKiin | drinks.</title>
+    <link rel="stylesheet" href="https://jurikiin.com/KiinStyle/css/kiinStyle.css">
+
+    <style>
+        .drink-image {
+            width: 330px;
+            height: 400px;
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            display: grid;
+            grid-template-areas: 
+                "image title"
+                "image ingredients"
+                "image instructions";
+            grid-template-rows: auto;
+            grid-template-columns: 300px;
+            justify-content: left;
+            justify-self: center;
+            align-items: center;
+            align-self: center;
+            column-gap: 50px;
+            width: fit-content;
+            white-space: nowrap;
+            margin: 5% 0;
+        }
+        .card img {
+            grid-area: image;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+        .ingredients {
+            grid-area: ingredients;
+        }
+        .instructions {
+            grid-area: instructions;
+        }
+        .wrapper {
+            overflow-y: hidden;
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+        .card-wrapper {
+            display: inline-block;
+            margin-right: 100px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1 class='font-lg font-header margin-left-5 water'>drinks.</h1>
+
+    <section>
+        <h1 class='font-header font-md bold margin-left-5 water'>Alcoholic drinks.</h1>
+        <div class='pad-20p wrapper'>
+            <div class='card-wrapper'>
+                <div class='card item-50 rad-25p pad-right-50p'>
+                    <h1 class='font-header font-md'>Whiskey Sour</h1>
+                    <img src='images/whiskey-sour.jpg' class='drink-image'>
+        
+                    <div class='ingredients font-header font-sm'>
+                        <h1>Ingredients</h1>
+                        <ul>
+                            <li>1.5 oz bourbon</li>
+                            <li>1 oz lemon juice</li>
+                            <li>0.5 oz simple syrup</li>
+                        </ul>
+                    </div>
+        
+                    <div class='instructions font-header font-sm'>
+                        <h1>Instructions</h1>
+                        <ul>
+                            <li>Fill shaker with ice</li>
+                            <li>Pour lemon juice, syrup, and bourbon into shaker</li>
+                            <li>Shake well</li>
+                            <li>Strain into glass</li>
+                            <li>Peel a lemon rind and rub around the rim of the glass</li>
+                            <li>Serve!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class='card-wrapper'>
+                <div class='card item-50 rad-25p pad-right-50p'>
+                    <h1 class='font-header font-md'>Ai-La Palu</h1>
+                    <img src='images/ai-la-palu.jpg' class='drink-image'>
+        
+                    <div class='ingredients font-header font-sm'>
+                        <h1>Ingredients</h1>
+                        <ul>
+                            <li>2 oz vodka</li>
+                            <li>1.5 oz cranberry juice</li>
+                            <li>0.5 oz simple syrup</li>
+                            <li>3 dashes hot sauce</li>
+                        </ul>
+                    </div>
+        
+                    <div class='instructions font-header font-sm'>
+                        <h1>Instructions</h1>
+                        <ul>
+                            <li>Add ice to mixing glass</li>
+                            <li>Pour all ingredients into your mixing glass</li>
+                            <li>Stir together</li>
+                            <li>Strain into cocktail glass</li>
+                            <li>Serve!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class='card-wrapper'>
+                <div class='card item-50 rad-25p pad-right-50p'>
+                    <h1 class='font-header font-md'>Moscow Mule</h1>
+                    <img src='images/moscow-mule.jpg' class='drink-image'>
+        
+                    <div class='ingredients font-header font-sm'>
+                        <h1>Ingredients</h1>
+                        <ul>
+                            <li>1.5 oz vodka</li>
+                            <li>2 slice of lime</li>
+                            <li>4 oz ginger beer</li>
+                        </ul>
+                    </div>
+        
+                    <div class='instructions font-header font-sm'>
+                        <h1>Instructions</h1>
+                        <ul>
+                            <li>Add ice to your glass</li>
+                            <li>Pour vodka and giner beer into your glass</li>
+                            <li>Squeeze in lime juice from 1 slice</li>
+                            <li>Garnish with lime slice</li>
+                            <li>Serve!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class='card-wrapper'>
+                <div class='card item-50 rad-25p pad-right-50p'>
+                    <h1 class='font-header font-md'>B52 (Shot)</h1>
+                    <img src='images/b52.jpg' class='drink-image'>
+        
+                    <div class='ingredients font-header font-sm'>
+                        <h1>Ingredients</h1>
+                        <ul>
+                            <li>0.25 oz Grand Marnier</li>
+                            <li>0.25 oz Coffee Liqueur</li>
+                            <li>0.25 oz Baileys Irish Cream</li>
+                        </ul>
+                    </div>
+        
+                    <div class='instructions font-header font-sm'>
+                        <h1>Instructions</h1>
+                        <ul>
+                            <li>Pour coffee liqueur into shot glass</li>
+                            <li>Gently layer Baileys Irish Cream</li>
+                            <li>Gently layer the Grand Marnier</li>
+                            <li>Serve!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1 class='font-header font-md bold margin-left-5 water'>Non-alcoholic</h1>
+        <div class='pad-20p wrapper'>
+            <div class='card-wrapper'>
+                <div class='card item-50 rad-25p pad-right-50p'>
+                    <h1 class='font-header font-md'>Blueberry Mojito</h1>
+                    <img src='images/blueberry-mojito.png' class='drink-image'>
+        
+                    <div class='ingredients font-header font-sm'>
+                        <h1>Ingredients</h1>
+                        <ul>
+                            <li>6-8 Mint Leaves</li>
+                            <li>Handful of fresh blueberries</li>
+                            <li>2 oz of lime juice</li>
+                            <li>2 oz of simple syrup</li>
+                            <li>Splash of club soda</li>
+                        </ul>
+                    </div>
+        
+                    <div class='instructions font-header font-sm'>
+                        <h1>Instructions</h1>
+                        <ul>
+                            <li>Fill glass with ice</li>
+                            <li>Lightly Muddle blueberries</li>
+                            <li>Add all ingredients and ice in a shaker.</li>
+                            <li>Shake 15 seconds</li>
+                            <li>Strain into glass</li>
+                            <li>Serve!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class='card-wrapper'>
+                <div class='card item-50 rad-25p pad-right-50p'>
+                    <h1 class='font-header font-md'>Rosemary Blueberry Smash</h1>
+                    <img src='images/rosemary-blueberry-smash.png' class='drink-image'>
+        
+                    <div class='ingredients font-header font-sm'>
+                        <h1>Ingredients</h1>
+                        <ul>
+                            <li>7-8 Blueberries</li>
+                            <li>1 Rosemary Sprig, stripped</li>
+                            <li>1 oz honery syrup</li>
+                            <li>1 oz fresh lemon juice</li>
+                            <li>4 oz sparkling mineral water</li>
+                        </ul>
+                    </div>
+        
+                    <div class='instructions font-header font-sm'>
+                        <h1>Instructions</h1>
+                        <ul>
+                            <li>Gently muddle blueberries, rosemary, and honey in your shaker</li>
+                            <li>Add lemon juice and ice, and shake for 10 seconds</li>
+                            <li>Strain into glass with fresh ice</li>
+                            <li>Top with sparkling water</li>
+                            <li>Stir to incorporate</li>
+                            <li>Serve!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class='card-wrapper'>
+                <div class='card item-50 rad-25p pad-right-50p'>
+                    <h1 class='font-header font-md'>Cucumber Giblet</h1>
+                    <img src='images/cucumber-giblet.png' class='drink-image'>
+        
+                    <div class='ingredients font-header font-sm'>
+                        <h1>Ingredients</h1>
+                        <ul>
+                            <li>1.5 oz club soda</li>
+                            <li>4-5 slices of muddled cucumber</li>
+                            <li>1 oz fresh lime juice</li>
+                            <li>1 oz simple syrup</li>
+                        </ul>
+                    </div>
+        
+                    <div class='instructions font-header font-sm'>
+                        <h1>Instructions</h1>
+                        <ul>
+                            <li>Fill glass with ice</li>
+                            <li>In your shaker, muddle cucumber slices</li>
+                            <li>Add lime juice and simple syrup to shaker</li>
+                            <li>Add ice and shake for 15 seconds</li>
+                            <li>Strain into glass</li>
+                            <li>Serve!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="main.js" type="text/javascript"></script>
+</body>
+</html>
